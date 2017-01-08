@@ -186,6 +186,19 @@
 
 \begin{frame}
   \frametitle{Bäume}
+  \framesubtitle{Recap}
+  \begin{itemize}
+    \item Baum: Spezieller Typ von Graph
+    \begin{itemize}
+      \item Zusammenhängend (Keine Waisenknoten)
+      \item Zyklusfrei
+      \item Ungerichtet
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bäume}
   \framesubtitle{Binär}
   \begin{figure}
     \begin{tikzpicture}[
@@ -655,11 +668,17 @@
 
 \begin{frame}
   \frametitle{Quad-/Octrees}
-  \framesubtitle{Videobeispiel}
+  \framesubtitle{Zusammenhang P?=NP}
   \begin{center}
-    \includegraphics[scale=0.2]{rsrc/asteroids}
-    
-    \tiny \it YouTube: Asteroids like Bullet Hell (Quadtrees finished) - Zimhey
+    \includegraphics[scale=0.75]{fcarc-march2012-quadtree}
+  
+    \begin{itemize}
+      \item Approximated TSP (PTAS) 
+      \begin{itemize}
+        \item Komplexität: $O(n {(log n)}^{O(c)})$
+        \item Quadtree als Clustering-Methode
+      \end{itemize}
+    \end{itemize}
   \end{center}
 \end{frame}
 
@@ -669,7 +688,8 @@
   \frametitle{Quad-/Octrees}
   \framesubtitle{Andere Anwendungen}
   \begin{itemize}
-    \item Punktemenge (Alt. zu Hashverfahren wie z.B. Morton-Code)
+    \item Punktemenge (Alt. zu Punkteashverfahren wie z.B. Morton-Code)
+    \item Nachbarsuche
     \item Frustum Culling
     \item Sparse data storage (Spreadsheets/Matrizen)
     \item Maximum disjoint sets
@@ -684,6 +704,16 @@
     \hfill\break
     Fragen?
   \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Quad-/Octrees}
+  \framesubtitle{Literatur}
+  \begin{itemize}
+    \item Hanan, \emph{The Design and Analysis of Spatial Data Structures}, Addison-Wesley, Reading, MA, 1990, ISBN 0-201-50255-0.
+    \item Berg, Kreveld, Overmans, Schwarzkopf, \emph{The Design and Analysis of Spatial Data Structures}, Addison-Wesley, Reading, MA, 1990, ISBN 0-201-50255-0.
+    \item Austin, \emph{A (Very Short) Detour for the Traveling Salesman}, American Mathematical Society, 2012.
+  \end{itemize}
 \end{frame}
 
 \end{document}
